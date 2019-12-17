@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        tr,
+        td {
+            padding: 15px;
+        }
+     
+        #bebe {
+            background: url('images/bg1.jpg') 0% 15%/cover;
+            background-size: cover;
+
+        }
+
+        #ingredient {
+            background: url(images/ing.png) center/contain;
+            height: 360px;
+        }
+        #step {
+            background: url(images/step.png) center/contain;
+        }
+    </style>
+</head>
+
+<body id="bebe">
+    <div class="container mt-5" id="bg">
+        <div class="row mb-5">
+            <div class="col-6">
+                <select class="form-control" id="chooseRecipe">
+                    <option value="" disabled selected>Choose recipe</option>
+                </select>
+            </div>
+            <div class="col-6" id="guest">
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="minus">&minus;</button>
+                    </div>
+                    <input type="text" class="form-control text-center" disabled id="member" value="1">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="add">&plus;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-4" ></div>
+            <div class="col-4 text-center" id="recipe"></div>
+            <div class="col-4" ></div>
+        </div>
+        <div class="row">
+            <div class="col-6" id="ingredient">
+            </div>
+            <div class="col-6" id="step">
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
